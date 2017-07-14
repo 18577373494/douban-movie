@@ -1,0 +1,41 @@
+/* pages/search/search.wxss */
+input{
+    width:98%;
+    height:40px;
+    border:1px solid #666;
+    border-radius: 6px;
+}
+.item{
+    height:100px;
+    width:100%;
+    display: block;
+}
+.poster{
+    width:30%;
+    display: inline-block;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+.meta{
+    width:60%;
+    display: inline-block;
+}
+.meta .title,.meta .sub-title,.meta .artists{
+    padding-left: 10px;
+    font-size: 16px;
+    display: block;
+}
+.meta .title{
+    font-weight: 700;
+}
+.meta .artists{
+    color:brown;
+}
+.rating{
+    width:10%;
+    display: inline-block;
+}
+.rating text{
+    color:#f00;
+}

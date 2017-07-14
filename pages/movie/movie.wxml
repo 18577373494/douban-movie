@@ -1,0 +1,17 @@
+<!--pages/movies_del_del/movies_del_del.wxml-->
+<scroll-view scroll-y>
+   <navigator url="../play/play?url={{movies_del.mobile_url}}">
+    <view class="meta">
+            <image class="poster" src="{{movies_del.images.large}}" background-size="cover"></image>
+            <text class="title">{{movies_del.title}}({{movies_del.year}})</text>
+            <text clas="info">{{pingfen}}{{movies_del.rating.average}}</text>
+            <text class="info">{{daoyan}}<block wx:for="{{movies_del.directors}}">{{item.name}}</block></text>
+            <text class="info">{{zhuyan}}<block wx:for="{{movies_del.casts}}">{{item.name}}</block></text>
+    </view>
+</navigator>
+<view class="summary">
+    <text class="label">{{zhaiyao}}</text>
+    <text class="content">{{movies_del.summary}}</text>
+</view>
+    
+</scroll-view>
